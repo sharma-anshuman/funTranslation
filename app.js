@@ -28,15 +28,19 @@ function errorHandler(error){
 
 function clickHandler(){
     var txt = txtInput.value;
+    // error of no text
     if(txt.length == 0){
         noText();
     }
+    //error of moves exhausted
     else if(clck == 0){
         outOfMoves();
     }
+    //API ERROR
     else{
-        clck--;
-        counter.textContent = clck;
+        
+        clck--; //reducing the number of moves left
+        counter.textContent = "Left: " + clck;
         fetch(getURL(txt))
         .then(response => response.json())
         .then(json =>{
