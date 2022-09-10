@@ -5,7 +5,7 @@ var txtOutput = document.querySelector("#op-txt");
 var translationAPI = "https://api.funtranslations.com/translate/shakespeare.json";
 
 function getURL(txt){
-    return translationAPI + "?" + txt;
+    return translationAPI + "?text=" + txt;
 };
 
 function clickHandler(){
