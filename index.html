@@ -5,32 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shakespeare Translator</title>
-    <style>
-        textarea{
-            width: 50%;
-            height: 15vh;
-            margin: 1rem;
-            padding: 1rem;
-        }
-        button{
-            display: block;
-            margin-left: 1rem;
-        }
-        #op-txt{
-            width: 50%;
-            height: 15vh;
-            margin: 1rem;
-            padding: 1rem;
-            display: block;
-            border: 1px solid black;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- <nav>
+        <div style="text-align: center; font-size: 2rem; padding: 1rem;">Shakespeare Translator</div>
+    </nav> -->
+    
     <h1>Welcome to Shakespeare Translator</h1>
     <textarea id="ip-txt" placeholder="Write some text to get it translated to Shakespeare's Language!!"></textarea>
-    <button id="btn-translate">Translate</button>
+    <button id="btn-translate" class="glow-on-hover">Translate <div id="counter">Left: 5</div></button>
+    <p>Text will get translated here 👇</p>
     <div id="op-txt"></div>
+
+    <!-- <footer>Convert from English to Shakespeare. Shakespeare invented many words and his style of narration in many ways was unique to his time. His ever popular works ( dramas and poems ) makes his language style live even today. This translator takes English as input and converts to Shakespeare English.</footer> -->
 
     <script src="app.js"></script>
 </body>
